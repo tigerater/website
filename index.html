@@ -42,8 +42,11 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
           </li>
+		  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+          </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Reddit</a>
+            <a class="nav-link js-scroll-trigger" href="#reddit">Reddit</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#education">Education at UCL</a>
@@ -100,13 +103,31 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
         <div class="my-auto">
+          <h2 class="mb-5">Experience</h2>
+		  
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">>Message Frequency Analysis</h3>
+              <div class="subheading mb-3"><a href="https://www.facebook.com">Using Data from Facebook Messages</a></div>
+              <p>blah blah<a href="https://github.com/tigerater/">Github Link</a> </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">June 2018</span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+	  
+	        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="reddit">
+        <div class="my-auto">
           <h2 class="mb-5">Reddit bots</h2>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0"><a href="https://www.reddit.com/u/spider-manbot">u/spider-manbot</a></h3>
+              <h3 class="mb-0">><a href="https://www.reddit.com/u/spider-manbot">u/spider-manbot</a></h3>
               <div class="subheading mb-3"><a href="https://www.reddit.com/r/marvelstudios">r/marvelstudios</a></div>
-              <p>My first excursion into making a bot that interacted with reddit! It was a very simple concept- scan the newest 100 comments every 10 minutes and check if comments had spelt Spider-Man without his hyphen, then reply with a comment correcting them! Comments that had already been replied to were added to a list and checked against with their unique ids to ensure that repetition didn't occur, and a running total was kept (and converted into ordinal numbers witht eh help of the module num2words). Overall a great experience, and not only did it introduce me to the reddit API but also to user interaction on a global scale. With the reach of reddit being very great, my bot ended up meeting someone who was offended by it and eventually this got it banned from the sub. <a href="https://github.com/tigerater/Spider-Man-Bot">Github Link</a></p>
+              <p>My first excursion into making a bot that interacted with reddit! It was a very simple concept- scan the newest 100 comments every 10 minutes and check if comments had spelt Spider-Man without his hyphen, then reply with a comment correcting them! Comments that had already been replied to were added to a list and checked against with their unique ids to ensure that repetition didn't occur, and a running total was kept (and converted into ordinal numbers with the help of the module num2words). Overall a great experience, and not only did it introduce me to the reddit API but also to user interaction on a global scale. With the reach of reddit being very great, my bot ended up meeting someone who was offended by it and eventually this got it banned from the sub. <a href="https://github.com/tigerater/Spider-Man-Bot">Github Link</a></p>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">May 2018</span>
@@ -115,7 +136,7 @@
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0"><a href="https://www.reddit.com/u/spider-quotebot">u/spider-quotebot</a></h3>
+              <h3 class="mb-0">><a href="https://www.reddit.com/u/spider-quotebot">u/spider-quotebot</a></h3>
               <div class="subheading mb-3"><a href="https://www.reddit.com/r/raimimemes">r/raimimemes</a></div>
               <p>My second bot, which was a look at how to handle large files. My bot detects mentions by username (to avoid getting banned like my first bot) and takes the number in the comment as the index for the quote in Spider-Man(2002). To create this, I had to obtain a caption file for Spider-Man and convert it to a readable list. As our function had to be run multiple times, I foiund a module called pickle that let me store lists in such a way that it was easily readible by python files. <a href="https://github.com/tigerater/Spider-QuoteBot">Github Link</a> </p>
             </div>
@@ -123,7 +144,6 @@
               <span class="text-primary">May 2018</span>
             </div>
           </div>
-        </div>
 
       </section>
 
